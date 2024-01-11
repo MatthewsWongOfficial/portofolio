@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import Header from './components/Header';
+import LandingPage from './components/LandingPage';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import Certifications from './components/Certifications';
+import BackToTopButton from './components/BackToTopButton';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <LandingPage />
+      <Education />
+      <Skills />
+      <Certifications />
+      {/* Add more components for other sections */}
+      <BackToTopButton />
     </div>
   );
-}
+};
 
 export default App;

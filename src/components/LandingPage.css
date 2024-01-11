@@ -1,0 +1,31 @@
+/* src/components/LandingPage.css */
+.bold-typewriter {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .profile-picture-container {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .profile-picture-container.visible {
+    opacity: 1;
+  }
+  
+  .greetings-container h2 {
+    font-family: 'Roboto-Bold', sans-serif;
+  }
+  
+  .logo-button {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust spacing between logos */
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Adjust shadow properties */
+  }
+  
+  /* Optional: Style the link to remove default text underline */
+  .logo-link {
+    text-decoration: none;
+  }

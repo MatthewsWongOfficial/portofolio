@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+/* src/App.css */
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('./fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.back-to-top.visible {
+  display: block;
+}
+
+/* Additional Bootstrap styles */
+.btn-dark {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: #333 !important;
+}
+
+/* src/App.css */
+/* ... your existing styles ... */
+
+/* src/App.css */
+/* ... your existing styles ... */
+
+.profile-picture-container {
+  display: inline-block;
+  border: 5px solid #000; /* Black border */
+  border-radius: 50%; /* Make the border a perfect circle */
+  overflow: hidden; /* Ensure the image stays within the rounded border */
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+}
+
+.profile-picture {
+  width: 100%; /* Use 100% width to fill the container */
+  height: 100%; /* Use 100% height to fill the container */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+@media (min-width: 768px) {
+  .profile-picture-container {
+    width: 400px; /* Adjust the size for desktop (three times bigger) */
+    height: 400px; /* Adjust the size for desktop (three times bigger) */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* App.css */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
+

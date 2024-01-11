@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: local('Roboto-Bold'), url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+.skills-heading {
+  font-family: 'Roboto-Bold', sans-serif;
+  color: #001f3f; /* Dark blue text color */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.border {
+  border: 2px solid #001f3f; /* Dark blue border color */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.border:hover {
+  transform: scale(1.05); /* Hover effect - slightly increase size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+h4 {
+  font-family: 'Roboto-Bold', sans-serif;
+  color: #001f3f; /* Dark blue heading color */
+  margin-bottom: 15px;
+}
+
+.list-unstyled {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333; /* List item color */
+}
+
+.list-unstyled li {
+  margin-bottom: 8px;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    margin-left: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    margin-right: -50px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0;
+  }
+}

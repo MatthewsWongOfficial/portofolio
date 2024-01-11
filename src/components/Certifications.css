@@ -1,0 +1,14 @@
+.certification-item {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .certification-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .certification-name {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
