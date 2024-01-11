@@ -39,7 +39,7 @@ const Certifications = () => {
   return (
     <section id="certifications" className="py-5">
       <Container>
-        <h2 className="text-center mb-4">Certifications</h2>
+      <h2 className="text-center mb-4 skills-heading">Certifications</h2>
         <Row>
           {CertificationData.map((certification, index) => (
             <Col key={index} xs={12} md={6} lg={3} className="mb-4">
