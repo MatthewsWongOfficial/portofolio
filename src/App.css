@@ -1,10 +1,14 @@
 /* src/App.css */
+
+/* Font */
 @font-face {
   font-family: 'Roboto-Bold';
   src: url('./fonts/Roboto-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
+
+/* Body */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -12,6 +16,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Animation */
+.header,
+.landing-page,
+.education,
+.skills,
+.certifications,
+.back-to-top {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Back-to-Top Button */
 .back-to-top {
   position: fixed;
   bottom: 25px;
@@ -23,7 +38,7 @@ body {
   display: block;
 }
 
-/* Additional Bootstrap styles */
+/* Bootstrap Styles Override */
 .btn-dark {
   background-color: #000 !important;
   color: #fff;
@@ -33,12 +48,7 @@ body {
   background-color: #333 !important;
 }
 
-/* src/App.css */
-/* ... your existing styles ... */
-
-/* src/App.css */
-/* ... your existing styles ... */
-
+/* Profile Picture Styles */
 .profile-picture-container {
   display: inline-block;
   border: 5px solid #000; /* Black border */
@@ -54,6 +64,7 @@ body {
   object-fit: cover; /* Maintain aspect ratio */
 }
 
+/* Responsive Styles for Profile Picture */
 @media (min-width: 768px) {
   .profile-picture-container {
     width: 400px; /* Adjust the size for desktop (three times bigger) */
@@ -61,7 +72,7 @@ body {
   }
 }
 
-/* App.css */
+/* Animation Keyframes */
 .fade-in {
   animation: fadeIn 1s ease-in-out;
 }
@@ -74,4 +85,3 @@ body {
     opacity: 1;
   }
 }
-

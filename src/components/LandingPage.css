@@ -1,31 +1,48 @@
-/* src/components/LandingPage.css */
 .bold-typewriter {
-    font-family: 'Roboto-Bold', sans-serif;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .profile-picture-container {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .profile-picture-container.visible {
-    opacity: 1;
-  }
-  
-  .greetings-container h2 {
-    font-family: 'Roboto-Bold', sans-serif;
-  }
-  
+  font-family: 'Roboto-Bold', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.profile-picture-container {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  max-width: 100%; /* Set maximum width to 100% of the container */
+}
+
+.profile-picture-container.visible {
+  opacity: 1;
+}
+
+.greetings-container h2 {
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+.logo-button {
+  width: 60px; /* Set an initial width */
+  height: 60px; /* Set an initial height */
+  margin-right: 10px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 50%; /* Ensure the profile picture remains a circle */
+  overflow: hidden; /* Ensure the overflow doesn't affect the circle shape */
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out; /* Add smooth transition */
+}
+
+/* Optional: Style the link to remove default text underline */
+.logo-link {
+  text-decoration: none;
+}
+
+/* Media query for adjusting size at 110% width */
+@media screen and (min-width: 110%) {
   .logo-button {
-    width: 50px; /* Adjust the width as needed */
-    height: 50px; /* Adjust the height as needed */
-    margin-right: 10px; /* Adjust spacing between logos */
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Adjust shadow properties */
+    width: 55px; /* Adjust the width as needed */
+    height: 55px; /* Adjust the height as needed */
   }
-  
-  /* Optional: Style the link to remove default text underline */
-  .logo-link {
-    text-decoration: none;
-  }
+}
+
+/* Hover animation */
+.logo-button:hover {
+  width: 70px; /* Adjust the width on hover */
+  height: 70px; /* Adjust the height on hover */
+}

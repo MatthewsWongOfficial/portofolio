@@ -39,7 +39,7 @@ const LandingPage = () => {
         <Col md={8}>
           <div className="greetings-container bg-light rounded p-4">
             <h2 className="mb-4">
-              Hello everyone!{' '}
+              Hello Everyone!{' '}
               <br className="d-md-none" /> {/* Line break for mobile */}
               I am{' '}
               <Typewriter text="Matthews Wong" delay={100} />
@@ -51,18 +51,35 @@ const LandingPage = () => {
               I’m always eager to learn new things and take on new challenges. If you share the same passion for technology and problem-solving, feel free to reach out to me.
             </p>
 
-           {/* Action buttons with logos */}
-<div className="action-buttons mt-4">
-  <a href="https://github.com/MatthewsWongOfficial" target="_blank" rel="noopener noreferrer">
-    <img src={githubLogo} alt="GitHub" className="logo-button" />
-  </a>
-  <a href="https://www.linkedin.com/in/matthewswong/" target="_blank" rel="noopener noreferrer">
-    <img src={linkedinLogo} alt="LinkedIn" className="logo-button" />
-  </a>
-  <a href="https://codepen.io/Matthews-Wong" target="_blank" rel="noopener noreferrer">
-    <img src={codepenLogo} alt="CodePen" className="logo-button" />
-  </a>
+{/* Action buttons with logos and names */}
+<div className="action-buttons mt-4 d-flex justify-content-center">
+  <div className="logo-container text-center mx-3">
+    <a href="https://github.com/MatthewsWongOfficial" target="_blank" rel="noopener noreferrer">
+      <img src={githubLogo} alt="GitHub" className="logo-button mb-2" />
+    </a>
+    <div className="caption" style={{ marginLeft: '-3mm' }}>GitHub</div>
+  </div>
+  <div className="logo-container text-center mx-3">
+    <a href="https://www.linkedin.com/in/matthewswong/" target="_blank" rel="noopener noreferrer">
+      <img src={linkedinLogo} alt="LinkedIn" className="logo-button mb-2" />
+    </a>
+    <div className="caption" style={{ marginLeft: '-3mm' }}>LinkedIn</div>
+  </div>
+  <div className="logo-container text-center mx-3">
+    <a href="https://codepen.io/Matthews-Wong" target="_blank" rel="noopener noreferrer">
+      <img src={codepenLogo} alt="CodePen" className="logo-button mb-2" />
+    </a>
+    <div className="caption" style={{ marginLeft: '-3mm' }}>CodePen</div>
+  </div>
 </div>
+
+
+
+
+
+
+
+
           </div>
         </Col>
       </Row>
