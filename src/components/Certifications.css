@@ -1,14 +1,70 @@
 .certification-item {
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certification-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certification-item img {
+  width: 100%;
+  height: auto;
+}
+
+.certification-name {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Modal styling */
+.modal-content {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.modal-header {
+  background-color: #fff;
+  color: #333;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 18px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-body img {
+  width: 100%;
+  height: auto;
+}
+
+/* Modal animations */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-  
-  .certification-item:hover {
-    transform: scale(1.05);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .certification-name {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
+}
+
+.modal {
+  animation: modalFadeIn 0.5s ease-in-out;
+  backdrop-filter: blur(8px);
+}

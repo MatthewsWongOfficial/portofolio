@@ -15,8 +15,9 @@ const Header = () => {
     fontFamily: 'Roboto-Bold',
   };
 
-  const isMobile = useMediaQuery({ maxWidth: 767 }); // Adjust the breakpoint as needed
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
+  // Adjust offsets as needed
   const desktopOffset = -50;
   const mobileOffset = -140;
 
@@ -31,13 +32,13 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link as={Link} to="education" smooth duration={500} style={navLinkStyle} offset={offset} onSelect={handleNavItemClick} onClick={handleNavItemClick}>
+            <Nav.Link as={Link} to="education" smooth duration={500} style={navLinkStyle} offset={offset} onClick={handleNavItemClick}>
               Education
             </Nav.Link>
-            <Nav.Link as={Link} to="skills" smooth duration={500} style={navLinkStyle} offset={offset} onSelect={handleNavItemClick} onClick={handleNavItemClick}>
+            <Nav.Link as={Link} to="skills" smooth duration={500} style={navLinkStyle} offset={offset} onClick={handleNavItemClick}>
               Skills
             </Nav.Link>
-            <Nav.Link as={Link} to="certifications" smooth duration={500} style={navLinkStyle} offset={offset} onSelect={handleNavItemClick} onClick={handleNavItemClick}>
+            <Nav.Link as={Link} to="certifications" smooth duration={500} style={navLinkStyle} offset={offset} onClick={handleNavItemClick}>
               Certifications
             </Nav.Link>
             {/* Add more Nav.Link for other sections if needed */}
