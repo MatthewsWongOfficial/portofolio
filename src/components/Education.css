@@ -1,29 +1,28 @@
 /* Education.css */
 
-/* Common Styles */
-.education-section {
-    margin-bottom: 50px;
+/* Logo Styles */
+.education-logo {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0); /* Initial box shadow */
+}
+
+.education-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .education-logo {
-    max-width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  to {
+    opacity: 1;
   }
-  
-  .education-logo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .education-details {
-    padding-left: 20px;
-  }
-  
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    .education-logo {
-      margin-bottom: 20px;
-    }
-  }
-  
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}

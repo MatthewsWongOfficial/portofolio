@@ -1,9 +1,12 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import sguLogo from '../assets/sgu-logo.png'; // Import the SGU logo
+import kinderfieldLogo from '../assets/kinderfield-logo.png'; // Import the Kinderfield logo
+import './Education.css'; // Import the CSS file
 
 const Education = () => {
   return (
-    <Container id="education" className="py-5">
+    <Container id="education" className="py-5 fade-in">
       <h2 className="text-center mb-4 skills-heading">My Education</h2>
 
       {/* Swiss German University */}
@@ -11,8 +14,9 @@ const Education = () => {
         <Row>
           <Col md={3} className="text-center mb-3">
             <Image
-              src="https://graduation.sgu.ac.id/assets/images/logo/logo-half.png"
+              src={sguLogo} // Use the imported SGU logo
               alt="Swiss German University Logo"
+              className="education-logo"
               fluid
               rounded
             />
@@ -40,19 +44,20 @@ const Education = () => {
         </Row>
       </div>
 
-      {/* Highfield Secondary School Cirebon */}
+      {/* Kinderfield School */}
       <div className="bg-light rounded p-4">
         <Row>
           <Col md={3} className="text-center mb-3">
             <Image
-              src="https://ugc.production.linktr.ee/MnmqnztfRqQRT96rj8Ff_SyzqkvX6Swd0Yz61"
-              alt="Highfield Secondary School Logo"
+              src={kinderfieldLogo} // Use the imported Kinderfield logo
+              alt="Kinderfield School Logo"
+              className="education-logo"
               fluid
               rounded
             />
           </Col>
           <Col md={9}>
-            <h3>Highfield Secondary School Cirebon</h3>
+            <h3>Kinderfield School</h3>
             <p className="text-muted">Junior and Senior Highschool</p>
             <p>Activities and societies: Basketball, Band, Vlog, Student Council</p>
             <ul>

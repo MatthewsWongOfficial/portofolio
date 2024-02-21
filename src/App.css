@@ -140,14 +140,9 @@ body {
   display: block;
 }
 
-.custom-notification .btn-close {
-  position: absolute;
-  top: 10px; /* Adjust this value to change the vertical position */
-  right: 10px; /* Adjust this value to change the horizontal position */
-  cursor: pointer;
-  color: #000; /* Change the color to match your design */
-}
-
-.custom-notification .btn-close:hover {
-  color: #ff0000; /* Change the color on hover to indicate it's clickable */
+.custom-notification {
+  background-color: #f8d7da; /* Custom background color */
+  color: #721c24; /* Custom text color */
+  border-color: #f5c6cb; /* Custom border color */
+  /* Add any other custom styles you want */
 }
