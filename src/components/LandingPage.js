@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Image, Button } from 'react-bootstrap';
-import profilePic from '../assets/profile-pic.jpg';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import profilePic from '../assets/profile-pic.png'; 
 import Typewriter from './Typewriter';
 import './LandingPage.css'; // Import the custom CSS for the LandingPage
 import githubLogo from '../assets/github.png';
@@ -22,22 +22,19 @@ const LandingPage = () => {
   return (
     <Container id="landing-page" className="py-5 text-center">
       <Row className="align-items-center">
-        {/* Photo Column (on the left for desktop, on top for mobile) */}
         <Col md={4} className={`mb-4 mb-md-0 ${imageVisible ? 'fade-in' : ''}`}>
           <div className={`profile-picture-container ${imageVisible ? 'visible' : ''}`}>
             <Image
               src={profilePic}
               alt="Matthews Wong"
-              fluid
-              roundedCircle
               className="profile-picture"
+              roundedCircle
             />
           </div>
         </Col>
 
-        {/* Greetings Column (on the right for desktop, below photo for mobile) */}
         <Col md={8}>
-          <div className="greetings-container bg-light rounded p-4">
+          <div className="greetings-container p-4">
             <h2 className="mb-4">
               Hello Everyone!{' '}
               <br className="d-md-none" /> {/* Line break for mobile */}
@@ -51,35 +48,27 @@ const LandingPage = () => {
               I’m always eager to learn new things and take on new challenges. If you share the same passion for technology and problem-solving, feel free to reach out to me.
             </p>
 
-{/* Action buttons with logos and names */}
-<div className="action-buttons mt-4 d-flex justify-content-center">
-  <div className="logo-container text-center mx-3">
-    <a href="https://github.com/MatthewsWongOfficial" target="_blank" rel="noopener noreferrer">
-      <img src={githubLogo} alt="GitHub" className="logo-button mb-2" />
-    </a>
-    <div className="caption" style={{ marginLeft: '-3mm' }}>GitHub</div>
-  </div>
-  <div className="logo-container text-center mx-3">
-    <a href="https://www.linkedin.com/in/matthewswong/" target="_blank" rel="noopener noreferrer">
-      <img src={linkedinLogo} alt="LinkedIn" className="logo-button mb-2" />
-    </a>
-    <div className="caption" style={{ marginLeft: '-3mm' }}>LinkedIn</div>
-  </div>
-  <div className="logo-container text-center mx-3">
-    <a href="https://codepen.io/Matthews-Wong" target="_blank" rel="noopener noreferrer">
-      <img src={codepenLogo} alt="CodePen" className="logo-button mb-2" />
-    </a>
-    <div className="caption" style={{ marginLeft: '-3mm' }}>CodePen</div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
+            {/* Action buttons with logos and names */}
+            <div className="action-buttons mt-4 d-flex justify-content-center">
+              <div className="logo-container text-center mx-3">
+                <a href="https://github.com/MatthewsWongOfficial" target="_blank" rel="noopener noreferrer">
+                  <img src={githubLogo} alt="GitHub" className="logo-button mb-2" />
+                </a>
+                <div className="caption">GitHub</div>
+              </div>
+              <div className="logo-container text-center mx-3">
+                <a href="https://www.linkedin.com/in/matthewswong/" target="_blank" rel="noopener noreferrer">
+                  <img src={linkedinLogo} alt="LinkedIn" className="logo-button mb-2" />
+                </a>
+                <div className="caption">LinkedIn</div>
+              </div>
+              <div className="logo-container text-center mx-3">
+                <a href="https://codepen.io/Matthews-Wong" target="_blank" rel="noopener noreferrer">
+                  <img src={codepenLogo} alt="CodePen" className="logo-button mb-2" />
+                </a>
+                <div className="caption">CodePen</div>
+              </div>
+            </div>
           </div>
         </Col>
       </Row>
